@@ -33,7 +33,7 @@ ENV AIRFLOW__CORE__LOAD_EXAMPLES=False
 RUN pip install apache-airflow[postgres]==${AIRFLOW_VERSION}
 
 RUN pip install SQLAlchemy==1.3.24
-
+RUN pip install flask-bcrypt
 # Установка визуального редактора для работы в Airflow UI
 # Дополнительная настройка чтобы можно было редактировать код
 # Внутри веб интерфейса
