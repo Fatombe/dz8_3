@@ -24,7 +24,7 @@ ENV AIRFLOW__CORE__PLUGINS_FOLDER=/usr/local/airflow/plugins
 
 # Замени executor и сменим бд на постгрес
 ENV AIRFLOW__CORE__EXECUTOR=LocalExecutor
-ENV AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgres://airflow:ghwf94hfw8@postgres:5432/airflow
+ENV AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgres+psycopg2://airflow:ghwf94hfw8@postgres:5432/airflow
 
 # Отключим примеры кода
 ENV AIRFLOW__CORE__LOAD_EXAMPLES=False
